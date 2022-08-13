@@ -222,8 +222,9 @@ h3.homepage-title {
 .cards-center {
   width: 90vw;
   max-width: 1200px;
-  margin: 2rem auto;
   display: grid;
+  gap: 2rem;
+  margin: 2rem auto;
 }
 .card {
   border: 1px solid var(--clr-grey);
@@ -273,7 +274,7 @@ h3.homepage-title {
 /* We can use media query and autofill/auto-fit to create layout */
 
 /* Using media query */
-/* @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .cards-center {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -284,7 +285,7 @@ h3.homepage-title {
   .cards-center {
     grid-template-columns: repeat(3, 1fr);
   }
-} */
+}
 
 /* Column using css grid */
 
@@ -293,12 +294,10 @@ h3.homepage-title {
 
 */
 
-.cards-center {
-  display: grid;
-  gap: 2rem;
-  /* grid-template-columns: repeat(auto-fill, minmax(378px, 1fr)); */
+/* .cards-center {
+  note :- if you use min value as 378 px then in smaller device card will not be in center.
   grid-template-columns: repeat(auto-fill, minmax(378px, 1fr));
-}
+} */
 /* Card End */
 
 /* Tiles Start */
